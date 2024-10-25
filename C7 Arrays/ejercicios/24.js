@@ -5,6 +5,22 @@ function continueStatement(num) {
   // se continúa con la siguiente iteración.
   // PISTA: Utiliza el statement 'continue'.
   // Tu código:
+  var contador = 0;
+  var limite = 10;
+  var cantidad = 2;
+  var suma = num;
+  var arreglo = [];
+
+  while (contador < limite) {
+    contador++;
+    if (contador === 5) {
+      continue;
+    }
+    suma += cantidad;
+    arreglo.push(suma);
+  }
+
+  return arreglo;
 }
 
 module.exports = continueStatement;
